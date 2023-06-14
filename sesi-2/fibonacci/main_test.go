@@ -35,8 +35,8 @@ func TestFib(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := fib(tt.args.n); got != tt.want {
-				t.Errorf("fib() = %v, want %v", got, tt.want)
+			if got := Fib(tt.args.n); got != tt.want {
+				t.Errorf("Fib() = %v, want %v", got, tt.want)
 			}
 		})
 	}
